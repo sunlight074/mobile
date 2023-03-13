@@ -16,11 +16,11 @@ export default function App() {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              if (route.name === 'Demo1') {
+              if (route.name === 'demo1') {
                 iconName = focused
                   ? 'ios-information-circle'
                   : 'ios-information-circle-outline';
-              } else if (route.name === 'Demo2') {
+              } else if (route.name === 'demo2') {
                 iconName = focused ? 'ios-list' : 'ios-list-outline';
               }
               return <Ionicons name={iconName} size={size} color={color} />;
@@ -29,18 +29,9 @@ export default function App() {
             tabBarInactiveTintColor: 'gray',
           })}
         >
-            <Tab.Screen name="Demo1" component={Demo1} />
-            <Tab.Screen name="Demo2" component={Demo2} />
+          <Tab.Screen name="demo2" component={Demo2} />
+          <Tab.Screen name="demo1" component={Demo1} /> 
         </Tab.Navigator>
   </NavigationContainer>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

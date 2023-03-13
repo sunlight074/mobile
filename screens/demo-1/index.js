@@ -2,12 +2,12 @@ import { Text , ScrollView , Image , View } from "react-native";
 import {TailwindProvider} from 'tailwindcss-react-native'
 import React from "react";
 
-export default function demo1 (){
+export default function Demo1 (){
     return (
         <TailwindProvider>
             <ScrollView> 
                 <View className="px-2 pt-5">
-                    <Text className="font-serif text-center pt-5 text-3xl text-gray-500">
+                    <Text className="text-center pt-5 text-3xl text-gray-500">
                         30 ที่เที่ยวนครนายก 2023 เที่ยวนครนายก กับที่เด็ดๆ [มีนาคม 2023]
                     </Text>
                     <View className="mt-5 mb-5 flex justify-center items-center">
